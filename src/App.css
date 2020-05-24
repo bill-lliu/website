@@ -1,4 +1,394 @@
-.App {
+/*--------------------------------*/
+/* Header */
+/*--------------------------------*/
+
+.header {
+  background-color: transparent !important;
+  /* fallback for old browsers */
+  /* background: rgb(86, 204, 242); */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: -webkit-linear-gradient(to top, rgb(91, 195, 230), rgb(145, 234, 228)); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: linear-gradient(to top, rgb(91, 195, 230), rgb(145, 234, 228)); */
+}
+
+.nav-item {
+  /* hover */
+  -moz-transition: -moz-transform 0.2s ease-out;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -ms-transition: -ms-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+}
+  .nav-item:hover {
+    -moz-transform: translate(0px, 2px);
+    -webkit-transform: translate(0px, 2px);
+    -ms-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+    text-decoration: underline;
+  }
+
+/*--------------------------------*/
+/* All Bodies */
+/*--------------------------------*/
+
+*{
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+}
+html {
+  background: url("images/toronto_from_plane.png") no-repeat center fixed;
+  background-size: cover;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  font-family: 'Gugi', cursive !important;
+}
+h2 {
+  font-family: 'Megrim', cursive !important;
+}
+h3 {
+  font-family: 'Bungee Shade', cursive !important;
+}
+h4 {
+  font-family: 'Londrina Outline', cursive !important;
+}
+h5 {
+  font-family: 'Nunito Sans', sans-serif !important;
+}
+h6 {
+  font-family: 'Nunito Sans', sans-serif !important;
+}
+p {
+  font-family: 'Nunito Sans', sans-serif !important;
+}
+
+/*--------------------------------*/
+/* Landing */
+/*--------------------------------*/
+
+.landing-grid {
+  background:'black';
+  /* background: rgb(127, 127, 213);
+  background: -webkit-linear-gradient(to bottom, rgb(91, 195, 230), rgb(134, 168, 231), rgb(127, 127, 213));
+  background: linear-gradient(to bottom, rgb(91, 195, 230), rgb(134, 168, 231), rgb(127, 127, 213)); */
+  text-align: center;
+  /* position: fixed; */
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.headshot-img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  /* hover */
+  -moz-transition: -moz-transform 0.2s ease-out;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -ms-transition: -ms-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  /* fade in */
+  -moz-animation: fadein 1s forwards;
+  -webkit-animation: fadein 1s forwards;
+  -ms-animation: fadein 1s forwards;
+  animation: fadein 1s forwards;
+}
+  
+  .headshot-img:hover {
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+
+/* banner like a name tag*/
+.banner {
+  background-color: rgba(64, 34, 112, 0.644);
+  width: 50%;
+  height: auto;
+  margin: auto;
+  border-radius: 2em;
+  /* banner animation */
+  opacity: 0;
+  -moz-animation: fadein 1s 1s forwards;
+  -webkit-animation: fadein 1s 1s forwards;
+  -ms-animation: fadein 1s 1s forwards;
+  animation: fadein 1s 1s forwards;
+}
+
+@media only screen and (max-width: 800px) {
+  .banner {
+    width: 80%;
+  }
+}
+
+  /* .banner h6 {
+    font-size: 1.4em;
+    font-weight: 100;
+    padding-top: 12px;
+    margin-bottom: 4px;
+    padding-left: 20px;
+    text-align: left;
+  } */
+
+  .banner h1 {
+    font-family: 'Nunito Sans', sans-serif !important;
+    font-size: 4.5em;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 4px;
+  }
+
+  .banner hr {
+    border-top: 0.2em dashed rgb(175, 230, 255);
+    width: 55%;
+    padding-top: 10px;
+    margin: auto;
+  }
+
+  .banner p {
+    color: rgb(175, 230, 255);
+    font-size: 0.95em;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    /*animation: fadein (duration, delay)*/
+    -moz-animation: fadein 1s 2s forwards;
+    -webkit-animation: fadein 1s 2s forwards;
+    -ms-animation: fadein 1s 2s forwards;
+    animation: fadein 1s 2s forwards;
+  }
+
+.type-wrap {
+  font-size: 1.8em;
+  font-weight: 200;
+  padding: 0.5em;
+  color: white;
+  margin: 0;
+}
+
+/* icon stuff */
+.social-links {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+  .social-links i {
+    color: white;
+    font-size: 4em;
+    padding: 0.3em;
+    opacity: 0;
+    /* fade in */
+    -moz-animation: fadein 1s 3s forwards;
+    -webkit-animation: fadein 1s 3s forwards;
+    -ms-animation: fadein 1s 3s forwards;
+    animation: fadein 1s 3s forwards;
+    /* hover */
+    -moz-transition: -moz-transform 0.2s ease-out;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    -ms-transition: -ms-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+  }
+
+  .social-links i:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+/* animation stuff */
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/*--------------------------------*/
+/* About Me */
+/*--------------------------------*/
+
+.about-body {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  /* position: fixed; */
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.about-grid {
+  text-align: center;
+  justify-content: center;
+  width: 85%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.404);
+  /* border: 4px solid rgba(250, 223, 253, 0.5); */
+  margin-bottom: 20px;
+  border-radius: 15px;
+  /* panel animation */
+  -moz-animation: fadein 1s forwards;
+  -webkit-animation: fadein 1s forwards;
+  -ms-animation: fadein 1s forwards;
+  animation: fadein 1s forwards;
+}
+
+.about-grid p {
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 100;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/*--------------------------------*/
+/* Resume */
+/*--------------------------------*/
+
+
+.resume-body {
+  margin: auto;
+}
+
+  .resume-body h2 {
+    text-align:center;
+  }
+
+/*--------------------------------*/
+/* Portfolio */
+/*--------------------------------*/
+
+.category-tabs {
+  margin: auto;
+}
+
+.portfolio-contents {
+  margin: auto;
+}
+
+  .portfolio-contents h2 {
+    text-align:center;
+  }
+
+  .portfolio-contents h6 {
+    font-size: 2em;
+    font-weight: 100;
+    letter-spacing: 0em;
+    text-align:center;
+  }
+
+.tab {
+  /* hover */
+  -moz-transition: -moz-transform 0.2s ease-out;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -ms-transition: -ms-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;  
+}
+.tab:hover {
+  -moz-transform: translate(0px, 2px);
+  -webkit-transform: translate(0px, 2px);
+  -ms-transform: translate(0px, 2px);
+  transform: translate(0px, 2px);
+  /* text-decoration: underline; */
+}
+
+/* in order to get cards onto the same row */
+.portfolio-grid {
+  display: flex;
+} 
+
+/*--------------------------------*/
+/* Contact */
+/*--------------------------------*/
+
+.contact-body {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  /* position: fixed; */
+  /* background: rgb(127, 127, 213);
+  background: -webkit-linear-gradient(to bottom, rgb(91, 195, 230), rgb(134, 168, 231), rgb(127, 127, 213));
+  background: linear-gradient(to bottom, rgb(91, 195, 230), rgb(134, 168, 231), rgb(127, 127, 213)); */
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 85%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.404);
+  /* border: 4px solid rgba(250, 223, 253, 0.5); */
+  margin-bottom: 20px;
+  border-radius: 15px;
+  /* panel animation */
+  -moz-animation: fadein 1s forwards;
+  -webkit-animation: fadein 1s forwards;
+  -ms-animation: fadein 1s forwards;
+  animation: fadein 1s forwards;
+}
+
+  .contact-grid h2 {
+    text-align: center;
+  }
+
+  .contact-grid p {
+    font-style: italic;
+  }
+
+  .contact-grid hr {
+    width: 80%;
+    margin: auto;
+  }
+
+  .contact-list i {
+    font-size: 40px;
+    /* hover */
+    -moz-transition: -moz-transform 0.2s ease-out;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    -ms-transition: -ms-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+  }
+
+  /* hover animation */
+  .contact-list i:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .contact-list a {
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+  }
+
+
+/* card component stuff */
+.card {
+  min-width:300px;
+  margin:auto;
+  background:rgba(255, 255, 255, 0.9); 
+  /* card animations */
+  -moz-animation: fadein 1s forwards;
+  -webkit-animation: fadein 1s forwards;
+  -ms-animation: fadein 1s forwards;
+  animation: fadein 1s forwards;
+}
+
+/*--------------------------------*/
+/* -- for reference! from original Create-React-App boiler plate -- */
+/*--------------------------------*/
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +425,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
