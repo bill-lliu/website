@@ -30,10 +30,10 @@ class Contact extends Component {
                             <List>
                                 <ListItem>
                                     <ListItemContent>
-                                        <a href="mailto:bill.liu@uwaterloo.ca"><i class="fas fa-envelope-square"></i></a>
+                                        <a href="mailto:siyi.liu@uwaterloo.ca"><i class="fas fa-envelope-square"></i></a>
                                     </ListItemContent>
                                     <ListItemContent>
-                                        <a href="mailto:bill.liu@uwaterloo.ca">bill.liu@uwaterloo.ca</a>
+                                        <a href="mailto:siyi.liu@uwaterloo.ca">siyi.liu@uwaterloo.ca</a>
                                     </ListItemContent>
                                 </ListItem>
                                 <ListItem>
