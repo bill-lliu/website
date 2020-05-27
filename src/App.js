@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import './Randomizer.js';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main.js';
 import { Link } from 'react-router-dom';
