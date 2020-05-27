@@ -69,6 +69,97 @@ p {
 }
 
 /*--------------------------------*/
+/* Background */
+/*--------------------------------*/
+
+.page-content {
+  width: 100%;
+  height: 100%;
+}
+/*background moving squares animation stuff */
+.box-area {
+  /* TODO - i dont like using absolute */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+/* locks the values of location, size, and animation time before randomizing per square */
+:root {
+  --box-time: 2s;
+  --box-location: 50%;
+  --box-size: 5em;
+}
+.box-area li {
+  /* TODO - i dont like using absolute */
+  position: absolute;
+  display: block;
+  list-style: none;
+  left: var(--box-location);
+  width: var(--box-size);
+  height: var(--box-size);
+  animation-duration: var(--box-time);
+  bottom: -10em;
+  background: rgba(255, 255, 255, 0.2);
+  animation: float 20s linear infinite;
+  border-radius: 10%;
+}
+.box-area li:nth-child(1){
+  left: var(--box-location);
+  width: var(--box-size);
+  height: var(--box-size);
+  animation-duration: var(--box-time);
+  animation-delay: 0s;
+}
+.box-area li:nth-child(2){
+  left: var(--box-location);
+  width: var(--box-size);
+  height: var(--box-size);
+  animation-duration: var(--box-time);
+  animation-delay: 0s;
+}
+.box-area li:nth-child(3){
+  left: var(--box-location);
+  width: var(--box-size);
+  height: var(--box-size);
+  animation-duration: var(--box-time);
+  animation-delay: 0s;
+}
+.box-area li:nth-child(4){
+  left: var(--box-location);
+  width: var(--box-size);
+  height: var(--box-size);
+  animation-duration: var(--box-time);
+  animation-delay: 0s;
+}
+.box-area li:nth-child(5){
+  left: var(--box-location);
+  width: var(--box-size);
+  height: var(--box-size);
+  animation-duration: var(--box-time);
+  animation-delay: 0s;
+}
+.box-area li:nth-child(5){
+  left: var(--box-location);
+  width: var(--box-size);
+  height: var(--box-size);
+  animation-duration: var(--box-time);
+  animation-delay: 0s;
+}
+@keyframes float{
+  0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-50em) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/*--------------------------------*/
 /* Landing */
 /*--------------------------------*/
 
@@ -97,10 +188,10 @@ p {
   -ms-transition: -ms-transform 0.2s ease-out;
   transition: transform 0.2s ease-out;
   /* fade in */
-  -moz-animation: fadein 1s forwards;
-  -webkit-animation: fadein 1s forwards;
-  -ms-animation: fadein 1s forwards;
-  animation: fadein 1s forwards;
+  -moz-animation: transpfadein 1s forwards;
+  -webkit-animation: transpfadein 1s forwards;
+  -ms-animation: transpfadein 1s forwards;
+  animation: transpfadein 1s forwards;
 }
 @media only screen and (max-width: 1400px) {
   .headshot-img {
@@ -127,10 +218,10 @@ p {
   border-radius: 2em;
   /* banner animation */
   opacity: 0;
-  -moz-animation: fadein 1s 1s forwards;
-  -webkit-animation: fadein 1s 1s forwards;
-  -ms-animation: fadein 1s 1s forwards;
-  animation: fadein 1s 1s forwards;
+  -moz-animation: transpfadein 1s 1s forwards;
+  -webkit-animation: transpfadein 1s 1s forwards;
+  -ms-animation: transpfadein 1s 1s forwards;
+  animation: transpfadein 1s 1s forwards;
 }
 
 @media only screen and (max-width: 800px) {
@@ -225,6 +316,10 @@ p {
 @keyframes fadein {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+@keyframes transpfadein {
+  from { opacity: 0; }
+  to { opacity: 0.9; }
 }
 
 /*--------------------------------*/

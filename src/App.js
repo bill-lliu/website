@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './Randomizer.js';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main.js';
 import { Link } from 'react-router-dom';
@@ -29,8 +30,17 @@ function App() {
           // background: '-webkit-linear-gradient(to bottom, rgb(91, 195, 230), rgb(134, 168, 231), rgb(127, 127, 213))',
           // background: 'linear-gradient(to bottom, rgb(91, 195, 230), rgb(134, 168, 231), rgb(127, 127, 213))',
         }}>
-          <div className="page-content"/>
-          <Main/>
+          <div className="page-content">
+            <ul className="box-area">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <Main/>
+          </div>
         </Content>
     </Layout>
 </div>
