@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main.js';
+import Footer from './components/footer.js';
 import { Link } from 'react-router-dom';
 
 function App() {
@@ -29,7 +30,43 @@ function App() {
         // background: '-webkit-linear-gradient(to bottom, rgb(91, 195, 230), rgb(134, 168, 231), rgb(127, 127, 213))',
         // background: 'linear-gradient(to bottom, rgb(91, 195, 230), rgb(134, 168, 231), rgb(127, 127, 213))',
       }}>
-        <div className="page-content">
+        {/* background is written here and not in a component in order to reduce redudancy of re-passing the Main component */}
+        <div className="lava-background">
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="border"></div>
+          <div className="border"></div>
+          <Main/>
+        </div>
+        <svg>
+          <defs>
+            <filter id="goo">
+                <feGaussianBlur in='SourceGraphic'
+                stdDeviation='10'/>
+                <feColorMatrix in='name' mode='matrix'
+                  values='1 0 0 0 0
+                          0 1 0 0 0
+                          0 0 1 0 0
+                          0 0 0 30 -15'/>
+                <feBlend in='SourceGraphic'/>
+            </filter>
+          </defs>
+        </svg>
+        {/* squares background
+        <div className="box-background">
           <ul className="box-area">
             <li></li>
             <li></li>
@@ -39,10 +76,8 @@ function App() {
             <li></li>
           </ul>
           <Main/>
-          <div className="footer">
-            <p className="footer-text">Made with ♥ in Waterloo © Bill Siyi Liu</p>
-          </div>
-        </div>
+        </div> */}
+      <Footer/>
       </Content>
     </Layout>
 </div>

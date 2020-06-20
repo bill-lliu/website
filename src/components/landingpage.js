@@ -69,7 +69,7 @@ export default Landing;
 
 //Typed.js component for flashy animations on landing page
 //might move to separate file if this one gets crowded
-class TypedReact extends React.Component {
+class TypedReact extends Component {
     componentDidMount() {
         // If you want to pass more options as props, simply add
         // your desired props to this destructuring assignment.
