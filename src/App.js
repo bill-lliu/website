@@ -31,41 +31,6 @@ function App() {
         // background: 'linear-gradient(to bottom, rgb(91, 195, 230), rgb(134, 168, 231), rgb(127, 127, 213))',
       }}>
         {/* background is written here and not in a component in order to reduce redudancy of re-passing the Main component */}
-        <div className="lava-background">
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="border"></div>
-          <div className="border"></div>
-          <Main/>
-        </div>
-        <svg>
-          <defs>
-            <filter id="goo">
-                <feGaussianBlur in='SourceGraphic'
-                stdDeviation='10'/>
-                <feColorMatrix in='name' mode='matrix'
-                  values='1 0 0 0 0
-                          0 1 0 0 0
-                          0 0 1 0 0
-                          0 0 0 30 -15'/>
-                <feBlend in='SourceGraphic'/>
-            </filter>
-          </defs>
-        </svg>
-        {/* squares background
         <div className="box-background">
           <ul className="box-area">
             <li></li>
@@ -74,9 +39,15 @@ function App() {
             <li></li>
             <li></li>
             <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
           </ul>
           <Main/>
-        </div> */}
+        </div>
       <Footer/>
       </Content>
     </Layout>
