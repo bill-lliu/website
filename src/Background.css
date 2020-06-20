@@ -74,7 +74,7 @@
   animation-duration: 10s;
 }
 .box-area li:nth-child(7){
-  left: 10%;
+  left: 5%;
   width: 7em;
   height: 7em;
   animation-delay: 5.5s;
@@ -88,28 +88,28 @@
   animation-duration: 8s;
 }
 .box-area li:nth-child(9){
-  left: 60%;
+  left: 75%;
   width: 8em;
   height: 8em;
   animation-delay: 8s;
   animation-duration: 16s;
 }
 .box-area li:nth-child(10){
-  left: 75%;
+  left: 20%;
   width: 3em;
   height: 3em;
   animation-delay: 8.5s;
   animation-duration: 6s;
 }
 .box-area li:nth-child(11){
-  left: 55%;
+  left: 15%;
   width: 5em;
   height: 5em;
   animation-delay: 9s;
   animation-duration: 10s;
 }
 .box-area li:nth-child(12){
-  left: 30%;
+  left: 65%;
   width: 4em;
   height: 4em;
   animation-delay: 10s;
