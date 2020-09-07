@@ -1,3 +1,5 @@
+//main.js, central file main display
+
 import React from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';

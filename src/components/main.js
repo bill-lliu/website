@@ -1,4 +1,4 @@
-//used for rerouting everything else
+//main.js used for rerouting everything else
 //no starting state, so no class here
 
 import React from 'react';

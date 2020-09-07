@@ -1,3 +1,5 @@
+//landingpage.js
+
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Typed from 'typed.js';

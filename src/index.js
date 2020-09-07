@@ -1,3 +1,4 @@
+//index.js, DOM manipulation
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
