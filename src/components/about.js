@@ -27,18 +27,18 @@ class About extends Component {
                     </Cell>
                     <Cell col={8}>
                         <p>
-                            Hello! My name is Bill Liu, and I am currently a first year 
+                            Hello! My name is Bill Liu, and I am currently a fourth year 
                             Computer Engineering student at the University of Waterloo. 
                         </p>
                         <p>
-                            When I'm not tending to the mountain-load of work from taking six courses at a time, 
+                            When I'm not tending to my six course load of work, 
                             you can find me on the hills
                             <span role="img" aria-label="skier">⛷️</span>
                             , in the kitchen
                             <span role="img" aria-label="ramen">🍜</span>
                             , or grinding away at a hackathon
                             <span role="img" aria-label="man_technologist">👨‍💻</span>
-                            . I also (occasionally) hold the pen! You can find some of my writing 
+                            . When I feel inspired, I also write! You can find some of my work at 
                             {/* eslint-disable-next-line react/jsx-no-target-blank */}
                             <a href="https://medium.com/@bill.lliu" target="_blank" style={{color:"white",textDecoration:"none"}}> @bill.lliu </a>
                              on Medium. 
@@ -47,7 +47,7 @@ class About extends Component {
                             I could go on and on about more generic details of myself, 
                             but I would much rather talk person-to-person! 
                             Why not give the chat on the bottom right a try? 
-                            (I'll be extra responsive these days while quarantined)
+                            I can respond whenever I next check my phone. 
                         </p>
                     </Cell>
                     <Cell row={12}>
