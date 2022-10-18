@@ -17,7 +17,7 @@ class Resume extends Component {
                     <CardActions border style={{textAlign:'center'}}>
                         {/* <Button colored ><a href="../pdfs/resume.pdf" target="_blank">Resume</a></Button> */}
                         {/* eslint-disable-next-line react/jsx-no-target-blank */}
-                        <Button colored href="https://drive.google.com/file/d/1oAQPbF0XKlo89Lqh7GTRFigZ1n3QnIMv/view?usp=sharing" target="_blank">Resume</Button>
+                        <Button colored href="https://drive.google.com/file/d/1m6AsDJjAIZ3gG2_QXx2ma7BU0JwmaUit/view?usp=sharing" target="_blank">Resume</Button>
                         <Button colored href="https://linkedin.com/in/bill-lliu" target="_blank">LinkedIn</Button>
                     </CardActions>
                 </Card>
