@@ -84,9 +84,10 @@ class Contact extends Component {
                       textDecoration: "none",
                     }}
                   >
-                    201 Lester Street <br />
-                    Waterloo, ON <br />
-                    N2L 3W3
+                    PO Box: <br />
+                    730 San Jose Ave <br />
+                    San Francisco, CA <br />
+                    94110
                   </ListItemContent>
                 </ListItem>
               </List>
